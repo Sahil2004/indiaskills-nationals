@@ -1,0 +1,6 @@
+.box {
+	transition: 0.05s scale ease;
+	&:hover {
+		scale: 1.3;
+	}
+}
