@@ -14,6 +14,16 @@ export default function Module() {
 							></iframe>
 						</div>
 					</article>
+					<article className="flex flex-col justify-center items-center gap-5 p-5 rounded-2xl border-2">
+						<h2 className="text-2xl">A2</h2>
+						<div className="w-[384px] h-[216px]">
+							<iframe
+								src="/09_module_a/A2"
+								className="w-[1920px] h-[1080px] scale-20 border-2 rounded-4xl origin-top-left"
+								inert
+							></iframe>
+						</div>
+					</article>
 				</a>
 			</section>
 		</main>
