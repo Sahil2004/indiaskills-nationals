@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+section {
+	position: relative;
+	width: 800px;
+	height: 300px;
+}
+
+.circle {
+	position: absolute;
+	border: 10px solid red;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.circle1 {
+	top: 0;
+	left: 0;
+	border-color: rgb(0, 157, 255);
+}
+
+.circle1::after {
+	content: "";
+	position: absolute;
+	height: 17px;
+	width: 10px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	background-color: rgb(0, 157, 255);
+	z-index: 10;
+	rotate: 10deg;
+	top: 94px;
+	left: 179px;
+}
+
+.circle2 {
+	bottom: 0px;
+	left: 130px;
+	border-color: rgb(227, 213, 64);
+}
+
+.circle3 {
+	top: 0;
+	left: 260px;
+	border-color: black;
+}
+
+.circle3::before {
+	content: "";
+	position: absolute;
+	height: 17px;
+	width: 10px;
+	border-radius: 2px;
+	background-color: rgb(227, 213, 64);
+	z-index: 10;
+	rotate: 110deg;
+	top: 94px;
+	left: -9px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+.circle3::after {
+	content: "";
+	position: absolute;
+	height: 17px;
+	width: 10px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	background-color: black;
+	z-index: 10;
+	rotate: 10deg;
+	top: 94px;
+	left: 179px;
+}
+
+.circle4 {
+	bottom: 0;
+	left: 390px;
+	border-color: green;
+}
+
+.circle5 {
+	top: 0;
+	left: 520px;
+	border-color: red;
+}
+
+.circle5::before {
+	content: "";
+	position: absolute;
+	height: 17px;
+	width: 10px;
+	border-radius: 2px;
+	background-color: green;
+	z-index: 10;
+	rotate: 110deg;
+	top: 94px;
+	left: -9px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
