@@ -1,0 +1,33 @@
+.container {
+	position: relative;
+	width: fit-content;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		height: 5px;
+		background-color: rgb(185, 185, 19);
+		width: 0;
+		transition: 0.5s width ease;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background-color: rgb(185, 185, 19);
+		transition: 0.5s width ease;
+		z-index: -1;
+	}
+}
+
+.link:hover .container::after {
+	width: 100%;
+}
+
+.link:active .container::before {
+	width: 100%;
+}
