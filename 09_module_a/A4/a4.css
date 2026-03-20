@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	height: 100vh;
+}
+
+section {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	perspective: 600px;
+}
+
+.box {
+	position: absolute;
+	top: 50px;
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	animation: 1s linear infinite both alternate bounce;
+}
+
+.box1 {
+	left: 50px;
+}
+
+.box2 {
+	left: 150px;
+	animation-delay: 1s;
+}
+
+.box3 {
+	left: 250px;
+	animation-delay: 1.5s;
+}
+
+.shadow {
+	position: absolute;
+	bottom: 0px;
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	perspective: 100px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	animation: 1s linear infinite both alternate shrink;
+	-webkit-animation: 1s linear infinite both alternate shrink;
+	transform-style: preserve-3d;
+	filter: blur(3px);
+	transform: rotateX(45deg);
+	-webkit-transform: rotateX(45deg);
+	-moz-transform: rotateX(45deg);
+	-ms-transform: rotateX(45deg);
+	-o-transform: rotateX(45deg);
+	-webkit-filter: blur(3px);
+}
+
+.shadow1 {
+	left: 50px;
+}
+
+.shadow2 {
+	left: 150px;
+	animation-delay: 1s;
+}
+
+.shadow3 {
+	left: 250px;
+	animation-delay: 1.5s;
+}
+
+@keyframes bounce {
+	from {
+		top: 50px;
+	}
+	to {
+		top: 200px;
+	}
+}
+
+@keyframes shrink {
+	from {
+		width: 0;
+		height: 0;
+		margin-left: 25px;
+		margin-top: 25px;
+	}
+	to {
+		width: 50px;
+		height: 50px;
+		margin-left: 0;
+		margin-top: 0;
+	}
+}
