@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>A12</title>
+		<link rel="stylesheet" href="a12.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="content"></div>
+			<span></span>
+		</div>
+		<script>
+			const texts = [
+				"David Smith",
+				"Web Developer",
+				"Web Designer",
+				"Competitor of Worldskills",
+			];
+			const content = document.querySelector(".content");
+			let i = 1;
+			content.innerText = texts[0];
+			setInterval(() => {
+				content.innerText = texts[i % texts.length];
+				i++;
+			}, 2000);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+}
+.content {
+	height: fit-content;
+	width: fit-content;
+	animation: 1.8s linear 0.2s alternate infinite typing;
+	overflow-x: hidden;
+	text-wrap: nowrap;
+	-webkit-animation: 1.8s linear 0.2s alternate infinite typing;
+}
+span {
+	display: block;
+	width: 5px;
+	height: 30px;
+	background-color: #000;
+	animation: 0.2s linear alternate infinite blink;
+	-webkit-animation: 0.2s linear alternate infinite blink;
+}
+
+@keyframes typing {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
