@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	height: 100vh;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+canvas {
+	border: 1px solid #000;
+	cursor: crosshair;
+}
+
+button,
+input {
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+button:hover {
+	background-color: rgb(219, 219, 219);
+}
+
+input {
+	border: 1px solid #000;
+}
