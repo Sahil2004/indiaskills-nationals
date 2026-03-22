@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100vh;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: blueviolet;
+	color: #fff;
+	border: 0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+canvas {
+	border: 1px solid #000;
+}

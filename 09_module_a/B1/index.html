@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>B1</title>
+		<link rel="stylesheet" href="b1.css" />
+	</head>
+	<body>
+		<canvas id="canvas" width="500px" height="500px"></canvas>
+		<section>
+			<label for="width">
+				Width Crop Size
+				<input type="range" name="width" id="width" min="5" step="1" />
+			</label>
+			<label for="height">
+				Height Crop Size
+				<input
+					type="range"
+					name="height"
+					id="height"
+					min="5"
+					step="1"
+				/>
+			</label>
+			<button onclick="download()">Download</button>
+		</section>
+		<script src="b1.js"></script>
+	</body>
+</html>
