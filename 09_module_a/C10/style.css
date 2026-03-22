@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.025em;
+    line-height: 1.5;
+    height: 100vh;
+    background: #888;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 80vw;
+    height: 80vh;
+    background: #fff;
+}
+
+#container .message-container {
+    flex-grow: 1;
+    position: relative;
+}
+
+#container .message-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+#container .message-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#container .message-item {
+    display: flex;
+    margin-bottom: .6rem;
+}
+
+#container .message-item.my {
+    justify-content: flex-end;
+}
+
+#container .message-content {
+    border-radius: .4rem;
+    border: 1px solid #777;
+    padding: .2rem .4rem;
+}
+
+#container .input-box {
+    display: flex;
+    border-top: 1px solid #777;
+    padding: 1rem;
+}
+
+#container .input-box input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 0 .4rem;
+    border-bottom: 1px solid #777;
+}
+
+#container .input-box button {
+    background: #229eff;
+    padding: .6rem 1rem;
+    color: #fff;
+    border: none;
+    margin-left: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
