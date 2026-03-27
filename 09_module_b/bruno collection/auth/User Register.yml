@@ -1,0 +1,23 @@
+info:
+  name: User Register
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/register"
+  body:
+    type: json
+    data: |-
+      {
+      "username": "user5",
+      "email": "user5@web.wsa",
+      "password": "user5pass"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

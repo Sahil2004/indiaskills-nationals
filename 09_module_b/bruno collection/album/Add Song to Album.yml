@@ -1,0 +1,37 @@
+info:
+  name: Add Song to Album
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{base_url}}/albums/2/songs"
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: adw
+      - name: duration_seconds
+        type: text
+        value: "213"
+      - name: lyrics
+        type: text
+        value: Sunrise here
+      - name: is_cover
+        type: text
+        value: "true"
+      - name: cover_image
+        type: file
+        value:
+          - /Users/sahil/Pictures/[01] My photos/Portrait in Google T shirt.jpeg
+      - name: label
+        type: text
+        value: '["Rock"]'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

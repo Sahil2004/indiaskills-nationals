@@ -1,0 +1,37 @@
+info:
+  name: Update Song Details
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{base_url}}/albums/2/songs/12"
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: update_title
+      - name: duration_seconds
+        type: text
+        value: "111"
+      - name: label
+        type: text
+        value: '["Rock", "Pop"]'
+      - name: lyrics
+        type: text
+        value: Lyrics updated
+      - name: cover_image
+        type: file
+        value:
+          - /Users/sahil/Pictures/[01] My photos/Shimla Profile Pic.jpeg
+      - name: is_cover
+        type: text
+        value: "true"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

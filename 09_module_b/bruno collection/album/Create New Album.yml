@@ -1,0 +1,33 @@
+info:
+  name: Create New Album
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/albums"
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: aaa
+      - name: artist
+        type: text
+        value: adwdaw
+      - name: release_year
+        type: text
+        value: "2025"
+      - name: genre
+        type: text
+        value: adw
+      - name: description
+        type: text
+        value: awdawd
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

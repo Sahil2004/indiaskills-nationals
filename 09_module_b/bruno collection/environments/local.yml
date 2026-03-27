@@ -1,0 +1,6 @@
+name: local
+variables:
+  - name: base_url
+    value: http://localhost:3001/api
+  - name: admin_token
+    value: Bearer 21232f297a57a5a743894a0e4a801fc3

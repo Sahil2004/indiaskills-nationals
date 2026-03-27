@@ -1,0 +1,25 @@
+info:
+  name: Get All Albums
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{base_url}}/albums?limit=1&cursor=eyJpZCI6M30=&year=2023-2024"
+  params:
+    - name: limit
+      value: "1"
+      type: query
+    - name: cursor
+      value: eyJpZCI6M30=
+      type: query
+    - name: year
+      value: 2023-2024
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

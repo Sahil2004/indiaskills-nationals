@@ -1,0 +1,21 @@
+info:
+  name: Update User Role
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{base_url}}/users/4"
+  body:
+    type: json
+    data: |-
+      {
+        "role":"user"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
