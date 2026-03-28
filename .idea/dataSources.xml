@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/09_module_b</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="ec2 instance" uuid="eb107ef5-4e47-4ce0-ba7a-2cab8c5890b2">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/09_module_b</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

@@ -8,6 +8,7 @@
 	<body>
 		Hi from <%= name %>
 		<form action="/names" method="POST">
+			<input type="hidden" name="_csrf" value="<%= _csrf %>">
 			<label for="name">
 				Enter the name:
 				<input type="text" name="name" id="name" />

@@ -1,6 +1,6 @@
 import "./node_modules/socket.io-client/dist/socket.io.js"
-const socket = io("http://localhost:3000/", {
-    path: "/chat/"
+const socket = io("http://3.25.73.121", {
+    path: "/09_module_a/c10/api/chat/"
 })
 
 const inpt = document.querySelector(".input-control")
