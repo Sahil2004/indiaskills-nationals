@@ -21,11 +21,18 @@ app.use(session({
     saveUninitialized: true
 }))
 
-app.use(cors())
+app.use(cors({
+    origin: ["http://localhost:3002", "http://3.25.73.121"],
+    methods: ["GET", "POST"],
+    credentials: true,
+}))
+
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(limiter)
 app.use(lusca.csrf())
+
+app.set('trust proxy', 1);
 
 app.set("view engine", "ejs")
 app.set("views", path.resolve("./src/views"))
