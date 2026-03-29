@@ -8,7 +8,11 @@ import { songsRouter } from "./routers/songsRouter.js"
 const app = express()
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: ["http://localhost:3001", "http://localhost:3000", "http://3.25.73.121/"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+}))
 
 app.use("/api/uploads", express.static("uploads"))
 app.use("/api/albums", albumRouter)
